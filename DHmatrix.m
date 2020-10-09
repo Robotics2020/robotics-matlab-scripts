@@ -52,7 +52,7 @@ function [A, T] = DHmatrix(parameters)
     % Assegnazione e stampa della matrice di trasformazione totale (A0n)
     T = A(:,:,1);
     for i = 2:n
-       T = T * A(:,:,i);
+       T = simplify(T * A(:,:,i));
     end
     disp(['*** A0' num2str(n) ' ***'])
     disp(T)
