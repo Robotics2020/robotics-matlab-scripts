@@ -16,7 +16,7 @@
 % -------------------------------------------------------------------------
 % Dopo la chiamata, si possono recuperare le singole matrici.
 % Esempio:
-% [A, T] = DHmatrix(parameters)
+% [A, T] = DHmatrix(parameters);
 % A01 = A(:,:,1);
 % A12 = A(:,:,2);
 % A23 = A(:,:,3);
