@@ -45,6 +45,7 @@ function [A, T] = DHmatrix(parameters)
             0, sin(alpha(i)), cos(alpha(i)), d(i);
             0, 0, 0, 1;
         ];
+        A(:,:,i) = simplify(A(:,:,i));
         disp(['*** A' num2str(i-1) num2str(i) ' ***'])
         disp(A(:,:,i))
     end
