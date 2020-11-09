@@ -26,9 +26,7 @@
 % Per valutare una matrice in una configurazione particolare, utilizzare
 % la sostituzione di variabili simboliche.
 % Esempio:
-% eval(subs(T, {'q1', 'q2', 'q3'}, {0, pi/2, 0.3}))
-% Stampa la matrice T nella configurazione (0, pi/2, 0.3).
-% -------------------------------------------------------------------------
+% vpa(eval(subs(T, {'q1' 'q2' 'q3'}, {0 pi
 
 function [A, T] = DHmatrix(parameters)
     % Parametri a, d, alpha, theta
